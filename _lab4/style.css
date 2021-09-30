@@ -1,0 +1,122 @@
+body {
+    background-image: url(https://cdn1.vectorstock.com/i/1000x1000/97/55/arctic-cartoon-background-vector-6339755.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#pingv {
+    display: flex;
+    margin-top: 300px;
+    width: 600px;
+}
+
+.pin1, .pin2 {
+    height: 100px;
+}
+
+
+.bull {
+    margin-right: 600px;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation: bullet 6s ease-in-out 1s  infinite;
+}
+
+
+@keyframes bullet {
+    from {
+        left: -300px;
+    }
+    to {
+        transform: translateX(590px);
+    }
+}
+
+#tur {
+    display: flex;
+    margin-left: 900px;
+}
+
+#tur img {
+    width: 80px;
+}
+.fish {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 200px;
+    margin-left: 270px;
+    margin-top: 50px;
+}
+
+.fish img {
+    width: 100px;
+}
+
+.f1 {
+    margin-left: 250px;
+    animation: 3s fish1 ease-in-out 2s forwards alternate infinite;
+}
+
+.f2 {
+    margin-left: 170px;
+    animation: 4s fish2 ease-in-out 2s forwards alternate infinite;
+}
+ 
+.f3 {
+    animation: fish;
+    animation: 5s fish3 ease-in-out 2s forwards alternate infinite;
+}
+
+
+@keyframes fish1 {
+    from {
+        left: 0;  
+        transform: rotateY(0.5turn); 
+    }
+    to {
+        left: 200px;
+        transform: translateX(200px);
+    }
+}
+
+@keyframes fish2 {
+    from {
+        left: 0;  
+        transform: rotateY(0.5turn); 
+    }
+    to {
+        left: 300px;
+        transform: translateX(300px);
+    }
+}
+
+@keyframes fish3 {
+    from {
+        left: 0;  
+        transform: rotateY(0.5turn); 
+    }
+    to {
+        left: 700px;
+        transform: translateX(700px);
+    }
+}
+
+.group-button {
+    position: absolute;
+    top: 70%;
+    right: 140px;
+}
+
+#play, #pause {
+    width: 90px;
+    height: 30px;
+    background-color: aquamarine;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

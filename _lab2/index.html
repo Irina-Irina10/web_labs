@@ -1,0 +1,375 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>гридыы</title>
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="logo-wrapper">
+                <h1>Гончарик Ирина</h1>
+                
+            </div>
+            <div id="hamburger" class="hamburger">
+                <i class="fas fa-hamburger"></i>
+            </div>
+        </header>
+        <aside id="sidebar" class="sidebar">
+            <ul class="sidebar__menu">
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#container"><i class="fuf"></i>Grid-контейнер, Grid-элементы</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#lines"><i class="fuf"></i>Линии, треки, ячейки, области</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#structure"><i class="fuf"></i>Формирование явной и неявной структуры grid</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#size"><i class="fuf"></i>Управление размерами элементов</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#ram"><i class="fuf"></i>Шаблон RAM</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#align"><i class="fuf"></i>Выравнивание элементов</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#order"><i class="fuf"></i>Порядок элементов</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#grid"><i class="fuf"></i>Различные способы расположения элементов в сетке</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="#form-section"><i class="fuf"></i>Многоколоночная форма</a>
+                </li>
+            </ul>
+        </aside>
+        <main class="main">
+            <section id="container" class="wrapper">
+                <h2>Grid-контейнер, Grid-элементы</h2>
+                
+                <div class="section__item">
+                    <h3>Grid-Inline 3 линии контейнеров, с помощью display: inline-grid</h3>
+                    <div class="container-inline">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="container-inline">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="container-inline">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+        
+                
+                <div class="section__item grid-block">
+                    <h3>Grid Блоки (2 Контейнера, которые переносятся) с помощью display: grid</h3>
+                    <div class="container">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                    <div class="container">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="lines">
+                <h2>Линии, трейки, ячейки, области</h2>
+                <div class="section__item">
+                    <h3>Gap: 15px</h3>
+                    <div class="container g-t-b">
+                        <div class="box">(1 fr, 1fr)</div>
+                        <div class="box">(1 fr, 3 fr)</div>
+                        <div class="box">(1 fr, 5 fr)</div>
+                        <div class="box">(3 fr, 1 fr)</div>
+                        <div class="box">(3 fr, 3 fr)</div>
+                        <div class="box">(3 fr, 5 fr)</div>
+                        <div class="box">(5 fr, 1 fr)</div>
+                        <div class="box">(5 fr, 3 fr)</div>
+                        <div class="box">(5 fr, 5 fr)</div>
+                    </div>
+                </div>
+
+
+                <div class="section__item">
+                    <h3>Области с помощью grid-area</h3>
+                    <div class="container g-t-a">
+                        <div class="box box_header">HEADER</div>
+                        <div class="box box_side">SIDE</div>
+                        <div class="box box_main">MAIN</div>
+                        <div class="box box_footer">FOOTER</div>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="structure" class="wrapper">
+                <h2>Формирование явной и неявной структуры grid</h2>
+
+                <div class="section__item">
+                    <h3>Явная структура (задано явное количество колонок и рядов, очередь и размеры элементов)</h3>
+                    <div class="container g-t-a">
+                        <div class="box box_header">HEADER</div>
+                        <div class="box box_side">SIDE</div>
+                        <div class="box box_main">MAIN</div>
+                        <div class="box box_footer">FOOTER</div>
+                    </div>
+                </div>
+                
+                <div class="section__item">
+                    <h3>Неявная структура</h3>
+                    <p>Грид в случае необходимости может автоматически создавать колонки и ряды. Чтобы управлять их характеристиками, есть свойства <span class="colored">grid-auto-columns</span> и <span class="colored">grid-auto-rows</span></p>
+                    <h4>Columns и Rows не указаны</h4>
+                    <p>Грид создает одноколоночную сетку, высота ряда зависит от размера контента</p>
+                    <div class="container impl-1">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+
+                    </div>            
+
+                    <h4>Columns и Rows не указаны</h4>
+                    <p>Здесь высота ряда задана через grid-auto-rows: 300px (Ключевое слово, указывающее размещать элементы, заполняя поочередно каждую строку и добавляя новые строки по мере необходимости. Это значение используется по умолчанию.)</p>
+                    <div class="container impl-3">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>            
+
+
+                    
+                    <h4>Columns и Rows не указаны, gria-auto-flow: column(Ключевое слово, указывающее размещать элементы, заполняя поочередно каждый столбец и добавляя новые столбцы по мере необходимости.)</h4>
+                    <p>Создается сетка в один ряд</p>
+                    <div class="container impl-2">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+
+                    </div>                    
+
+
+                    <h4>Grid-auto-flow: dense(Ключевое слово, указывающее заполнять элементами свободное пространство сетки. Это может привести к нарушению порядка, т.к. элементы будут выстраиваться не в соответствии со своим расположением, а в соответствии с размером.
+                    </h4>
+                    <div class="container implicit implicit-dense">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="size">
+                <h2>Управление размерами элементов</h2>
+
+                <div class="section__item">
+                    <h3>Auto-fill, Вместо того, чтобы указывать количество колонок и сколько раз им повторяться, мы просто можем сказать браузеру, чтобы он уместил как можно больше колонок с учетом указанной длины. minmax Она позволяет вам указывать минимальное и максимальное значение одновременно. Если нам надо, чтобы колонки были минимум в 100px и максимум в 1fr, то колонки автоматически получат размер, чтобы заполнить строку</h3>
+                    <div class="container auto-fill">
+                        <div class="box">minmax(200px, 1fr)</div>
+                        <div class="box">minmax(200px, 1fr)</div>
+                        <div class="box">minmax(200px, 1fr)</div>
+
+                    </div>
+                </div>
+
+                <div class="section__item">
+                    <h3>Auto-fit, auto-fit будет вести себя почти как auto-fill, но если есть только одна строка и есть место для дополнительных колонок, но нет элементов, которые можно вставить эти колонки, то тогда он сделает ширину пустых колонок равную нулю. А если выставить максимальную ширину колонок на 1fr, то браузер разделит оставшееся место поровну между ними.</h3>
+                    <div class="container auto-fit">
+                        <div class="box">minmax(200px, 1fr)</div>
+                        <div class="box">minmax(200px, 1fr)</div>
+                        <div class="box">minmax(200px, 1fr)</div>
+
+                    </div>
+                </div>
+                
+                <div class="section__item">
+                    <h3>Явно заданные размеры</h3>
+                    <div class="container con-expl">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="ram">
+                <h2>Шаблон RAM (repeat, auto, minmax) repeat представляет повторяющийся фрагмент списка дорожек, позволяя записывать большое количество столбцов или строк, которые демонстрируют повторяющийся шаблон, в более компактной форме.</h2>
+                <div class="section__item">
+                    <h3></h3>
+                    <div class="container ram">
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="align">
+                <h2>Выравнивание элементов</h2>
+                <div class="section__item">
+                    <h3>Justify Self </h3>
+                    <div class="container grid-items">
+                        <div class="box">default</div>
+                        <div class="box item-box-2">END</div>
+                        <div class="box item-box-3">STRETCH</div>
+                        <div class="box item-box-4">Center</div>
+                    </div>
+                </div>
+        
+                <div class="section__item">
+                    <h3>Align Self </h3>
+                    <div class="container align-items">
+                        <div class="box align-box-2">Stretch</div>
+                        <div class="box align-box-3">End</div>
+                        <div class="box align-box-4">Center</div>
+                    </div>
+                </div>
+        
+            </section>
+
+            <section id="order">
+                <h2>Порядок элементов</h2>
+
+                <div class="section__item">
+                    <h3>Дефолтный</h3>
+                    <div class="container con-ord">
+                        <div class="box">DOM1</div>
+                        <div class="box">DOM2</div>
+                        <div class="box">DOM3</div>
+                        <div class="box">DOM4</div>
+
+                    </div>
+                </div>
+
+                <div class="section__item">
+                    <h3>Измененный</h3>
+                    <div class="container con-ord">
+                        <div class="box box-1">DOM1</div>
+                        <div class="box box-2">DOM2</div>
+                        <div class="box box-3">DOM3</div>
+                        <div class="box box-4">DOM4</div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="grid">
+                <h2>Различные способы расположения элементов в сетке</h2>
+
+                <div class="section__item">
+                    <h3>Галерея (свойства grid-column, grid-row)</h3>
+                    <div class="container gallery">
+                
+                        <div class="gallery__item gallery__item_1">
+                            <img src="https://kartinkinaden.ru/uploads/posts/2021-01/thumbs/1611085314_2-p-serii-gladkii-fon-3.jpg" alt="">
+                        </div>
+                        
+                        <div class="gallery__item gallery__item_2">
+                            <img src="https://wallpapertag.com/wallpaper/full/0/5/d/435364-download-black-gradient-wallpaper-1920x1080-for-tablet.jpg" alt="">
+                        </div>
+                        
+                        <div class="gallery__item gallery__item_3">
+                            <img src="https://kartinkinaden.ru/uploads/posts/2021-01/thumbs/1611085314_2-p-serii-gladkii-fon-3.jpg" alt="">
+                        </div>
+                
+                        <div class="gallery__item gallery__item_4">
+                            <img src="https://wallpapertag.com/wallpaper/full/0/5/d/435364-download-black-gradient-wallpaper-1920x1080-for-tablet.jpg" alt="">
+                        </div>
+                        
+                        <div class="gallery__item gallery__item_5">
+                            <img src="https://kartinkinaden.ru/uploads/posts/2021-01/thumbs/1611085314_2-p-serii-gladkii-fon-3.jpg" alt="">
+                        </div>
+                        
+                        <div class="gallery__item gallery__item_6">
+                            <img src="https://wallpapertag.com/wallpaper/full/0/5/d/435364-download-black-gradient-wallpaper-1920x1080-for-tablet.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </section>
+
+            <section id="form-section">
+                <h2>Многоколоночная форма</h2>
+
+                <div class="section__item">
+                    <form id="form" class="form">
+                        <div class="form__inputs">
+                            <div class="form__item">
+                                <label for="name">Имя</label>
+                                <input class="form__input" name="name" id="name" type="text">
+                            </div>
+                            <div class="form__item">
+                                <label for="surname">Фамилия</label>
+                                <input class="form__input" name="surname" id="surname" type="text">
+                            </div>
+                            <div class="form__item">
+                                <label for="phone">Телефон</label>
+                                <input class="form__input" name="phone" id="phone" type="tel">
+                            </div>
+                            <div class="form__item">
+                                <label for="index">Номер банковской карты</label>
+                                <input class="form__input" name="index" id="index" type="text">
+                            </div>
+                            <div class="form__item">
+                                <label for="country">Код с обратной стороны карты</label>
+                                <input class="form__input" name="country" id="country" type="text">
+                            </div>
+                            <div class="form__item">
+                                <label for="city">Зеленый чай или черный?</label>
+                                <input class="form__input" name="city" id="city" type="text">
+                            </div>
+                        </div>
+                        <div class="form__item form__item_button">
+                            <input class="form__button" type="submit" value="Отправить">
+                        </div>
+                        
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <img class="logo" src="https://kartinkinaden.ru/uploads/posts/2021-01/thumbs/1611085314_2-p-serii-gladkii-fon-3.jpg" width="300" height="150" alt="polytech-footer">
+        </footer>
+    </div>
+</body>
+</html>

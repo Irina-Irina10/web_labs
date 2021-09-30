@@ -1,0 +1,50 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    background-color: antiquewhite;
+    color: antiquewhite;
+}
+
+header {
+    background-color: rgb(92, 86, 86);
+    height: 100px;
+}
+
+p {
+    padding-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.btndiv {
+    margin: 40px 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    color: antiquewhite;
+    background-color: rgb(92, 86, 86);
+    text-transform: uppercase;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+img{
+    max-width: 1000px;
+    max-height: 500px;
+}
+
+#photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#currentimg {
+    display: flex;
+    justify-content: center;
+}

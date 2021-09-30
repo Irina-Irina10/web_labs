@@ -1,0 +1,343 @@
+body {
+    min-width: 1400px;
+    margin: auto;
+    padding: 10px;
+    color: rgb(24, 24, 24);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e5e5e5;
+    font-size: 18px;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 400;
+}
+
+h2 {
+    margin: 0;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: center;
+    padding-top: 65px;
+    font-style: normal;
+}
+
+p {
+    line-height: 30px;
+    font-weight: 400;
+}
+
+header {
+    height: 715px;
+    background-image: url(imgs/anastasiya-vysotskaya-v5GfetB7Yv0-unsplash1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    font-size: 16px;
+    padding: 38px 100px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 19.5px;
+    align-items: center;
+}
+
+.header-container {
+    margin-left: 185px;
+    max-width: 530px;
+    margin-bottom: 0;
+}
+
+.header-container p {
+    width: 440px;
+}
+
+.pink-btn {
+    background-color: #CC8B86;
+    border: none;
+    width: 309px;
+    height: 74px;
+    margin-top: 20px;
+    color: #533738;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+#o-nas {
+    height: 915px;
+    background: #E5E5E5;
+}
+
+.o-nas_container {
+    margin: 0 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-block {
+    width: 530px;
+    font-weight: 400;
+}
+
+.o-nas_container img {
+    padding-top: 28px;
+    margin-left: 100px;
+}
+
+.color-block {
+    height: 273px;
+    background: #8D7370;
+    display: flex;
+    padding: 82px 182px;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.text-o-nas h1{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+#nashi-raboti {
+    padding: 0 170px;
+    height: 1200px;
+    background: #E5E5E5;
+}
+
+#nashi-raboti h2 {
+    text-align: start;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 490px 200px 490px;
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+
+.card-2 {
+    grid-column: span 2;
+}
+
+.card-3 {
+    grid-column: span 2;
+}
+
+#nashi-raboti img {
+    margin: 0;
+}
+
+.works-gallery__item {
+    position: relative;
+    width: 490px;
+}
+    
+.works-gallery__item:hover .works-gallery__content {
+    background: rgba(100, 72, 69, 0.8);
+}
+    
+.works-gallery__item:hover .works-gallery__text {
+    opacity: 1;
+}
+    
+.works-gallery__content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    right: 0;
+    transition: .8s ease all;
+}
+    
+.works-gallery__text {
+    color: #fff;
+    text-align: center;
+    padding: 0 35px;
+    opacity: 0;
+    transition: .8s ease all;
+}
+    
+.works-gallery__text p {
+    text-align: left;
+}
+    
+.works-gallery__text h4 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.no {
+    background: none;
+}
+    
+#comanda {
+    background-color: #E2C4BA;
+    height: 998px;
+}
+
+#grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 40px 150px;
+}
+
+.block-com  {
+    width: 320px;
+    position: relative;
+    left: 40px;
+}
+
+.no-otst {
+    padding-top: 0;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    margin-top: 50px;
+
+}
+
+.block {
+    width: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.circ {
+    background: #8D7370;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    color: #fff;    
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#otzivi {
+    height: 1516px;
+    background: #E5E5E5;
+}
+
+.scroll {
+    margin: 30px 270px;
+    display: grid;
+    grid-template-columns: 80px 415px 415px 100px;
+}
+
+.scroll .circ {
+    background: #CC8B86;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 230px;
+}
+
+.text {
+    padding: 45px 10px;
+}
+
+.form {
+    margin-top: 100px;
+    height: 624px;
+    background: #8D7370;
+    display: flex;
+}
+
+.left-form {
+    color: #F6EDE9;;
+    margin-left: 230px;
+    width: 500px;
+}
+
+.left-form h2 {
+    color: #fff;
+}
+
+.form-action {
+    margin-top: 40px;
+}
+
+.form-action p {
+    position: relative;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.input-label {
+    position: absolute;
+    bottom: 11px;
+    left: 0;
+    transition: .2s ease-in;
+}
+
+button, input {
+    line-height: normal;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+input[type="text" i] {
+    padding: 1px 2px;
+}
+
+input[type="tel" i] {
+    padding: 1px 2px;
+}
+
+.text-input {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 13px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+label {
+    cursor: default;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 262px 890px 270px;
+}
+ footer p {
+     margin-left: 30px;
+ }

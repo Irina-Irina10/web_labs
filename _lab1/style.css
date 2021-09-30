@@ -1,0 +1,111 @@
+body {
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    color: rgb(53, 24, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    margin: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+#main {
+    background-color: rgb(224, 224, 223);
+}
+
+.container {
+    background-color: rgb(241, 238, 238);
+    width: 30%;
+    margin: 10px 20px;
+    padding: 5px;
+    flex: none
+}
+
+#row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#column {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#column .container {
+    width: 23%;
+}
+
+.a1 {
+    order: 2;
+}
+
+.a2 {
+    order: 3;
+}
+
+.a3 {
+    order: 1;
+}
+
+#size {
+    display: flex;
+    align-items: flex-end;
+}
+
+#size .container {
+    width: 15%;
+}
+
+.one {
+    flex-grow: 2;
+}
+
+.two {
+    flex-grow: 1;
+    order: -1;
+}
+
+.three {
+    flex-grow: 2;
+    order: -1;
+}
+
+.vlog {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.back {
+    background-color: azure;
+}
+
+.vlog {
+    background-color: whitesmoke;
+}
